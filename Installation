@@ -6,6 +6,4 @@
 
 * cd password-generator-tool
 
-* pip install -r requirements.txt
-
-* python3 tool.p
+* bash password_generator.py
