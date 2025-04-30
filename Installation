@@ -1,0 +1,38 @@
+#!/bin/bash
+
+# Checking if Git is installed
+echo "Checking if git is installed..."
+pkg install git -y
+
+# Checking if Python is installed
+echo "Checking if Python is installed..."
+pkg install python -y
+
+# Checking if pip is installed
+echo "Checking if pip is installed..."
+pkg install python-pip -y
+
+# Step 1: GitHub login using SSH key (if not already logged in)
+echo "Setting up SSH keys for GitHub..."
+if [ ! -f "$HOME/.ssh/id_ed25519" ]; then
+    echo "SSH key not found. Generating SSH key..."
+    ssh-keygen -t ed25519 -C "yourfatherjutt@gmail.com" -f "$HOME/.ssh/id_ed25519" -N ""
+    cat "$HOME/.ssh/id_ed25519.pub"  # Display public key
+    echo "Add the above SSH key to your GitHub account."
+    read -p "Press Enter after adding SSH key to GitHub."
+fi
+
+# Step 2: Clone the repository from GitHub
+echo "Cloning the repository..."
+git clone git@github.com:Termuxstar/password-generator-tool.git
+cd password-generator-tool || exit
+
+# Step 3: Install required dependencies from requirements.txt
+echo "Installing dependencies from requirements.txt..."
+pip install -r requirements.txt
+
+# Step 4: Run the Password Generator Tool
+echo "Running the Password Generator Tool..."
+python3 tool.py
+
+echo "Setup completed successfully!"
