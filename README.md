@@ -1,6 +1,6 @@
-#⚠️Use desktop mode ⚠️*
+# ⚠️Use desktop mode ⚠️*
 
-         😎
+#        😎
 
 # Password Generator Tool
 
@@ -17,7 +17,8 @@ git@github.com:Termuxstar/password-generator-tool.git
 
 
 
-     🦅☠️ INSTALLATION ☠️ 🦅
+
+#      ⚠️INSTALLATION⚠️
 
 
 
