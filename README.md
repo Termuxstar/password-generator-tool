@@ -17,18 +17,23 @@ This is a **Password Generator Tool** created by Zabiullah Darkworld, which gene
 ╚════════════════════════════════════════════════════════╝
 
 ➤  ①  UPDATE & UPGRADE TERMUX
+
     $ pkg update && pkg upgrade -y   🔁
 
 ➤  ②  INSTALL REQUIRED PACKAGES
+
     $ pkg install git python -y      🐍📦
 
 ➤  ③  CLONE THE POWERFUL TOOL
+
     $ git clone git@github.com:Termuxstar/password-generator-tool.git   🔐
 
 ➤  ④  ENTER TOOL DIRECTORY
+
     $ cd password-generator-tool     📂
 
 ➤  ⑤  RUN THE GENERATOR SCRIPT
+
     $ bash password_generator.py     ⚙️🔓
 
 ════════════════════════════════════════════════════════════
